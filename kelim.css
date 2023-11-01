@@ -1,0 +1,42 @@
+.container {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.container .span {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: white;
+}
+.container .item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.container .itemImage {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .itemInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 7px;
+}
+.container .itemNameSpan {
+  font-size: 20px;
+  font-weight: bold;
+}
+.container .itemFooter {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=kelim.css.map */

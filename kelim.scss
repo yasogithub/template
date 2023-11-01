@@ -1,0 +1,73 @@
+$itemSize: 300px;
+
+.container{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .span{
+        font-family: sans-serif;
+        font-size: 18px;
+        color: white;
+    }
+
+    .item{
+        display: flex;
+        flex-direction: column;
+        border-radius: 12px;
+        overflow: hidden;
+        
+        &Image{
+            width: $itemSize;
+            height: $itemSize;
+            overflow: hidden;
+            object-fit: cover;
+        }
+
+        &InfoContainer{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            background-color: rgb(0, 0, 0, 0.45);
+            padding: 7px;
+        }
+
+        &Name{
+
+            &Span{
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+
+        &Footer{
+            display: flex;
+            justify-content: space-between;
+
+            &Price{
+
+                &Span{
+
+                }
+            }
+
+            &Like{
+
+                &Icon{
+
+                }
+
+                &Counter{
+
+                    &Span{
+
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+$itemSize: 300px;
+
+
+body{
+    background-color: white;
+}
+
+.main{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: $itemSize;
+        height: $itemSize;
+        border-radius: 12px;
+        overflow: hidden;
+        position: relative;
+        border: 2px solid black;
+        text-decoration: none;
+
+        &Image{
+            width: $itemSize;
+            height: $itemSize;
+            overflow: hidden;
+            object-fit: cover;
+        }
+
+        &Counter{
+            top: 0;
+            right: 0;
+            padding: 8px 8px;
+            border-radius: 0 0 0 12px;
+
+            &Span{
+
+            }
+        }
+
+        &Name{
+            display: flex;
+            position: absolute;
+            bottom: 15px;
+            width: 100%;
+            padding: 4px 8px;
+            
+            &Span{
+                font-size: 20px;
+            }
+        }
+
+        &Background{
+            background-color: rgb(0, 0, 0, 0.45);
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+        }
+    }
+}
