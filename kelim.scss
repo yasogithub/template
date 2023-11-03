@@ -22,6 +22,7 @@ body{
         display: flex;
         flex-direction: column;
         height: fit-content;
+        margin-bottom: 15px;
 
         .details{
             height: fit-content;
@@ -37,8 +38,8 @@ body{
         &price{
             &Span{
                 font-family: lato;
-                font-weight: 300;
-                font-size: 20px;
+                font-weight: 600;
+                font-size: 25px;
             }
         }
 
@@ -61,8 +62,8 @@ body{
 }
 
 .modalBackground{
-    background-color: rgb(0, 0, 0, 0.60);
-    z-index: 9999;
+    background-color: rgb(0, 0, 0, 0.85);
+    z-index: 888;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -75,6 +76,10 @@ body{
     border-radius: 12px;
     height: fit-content;
     overflow: auto;
+    max-width: 680px;
+    margin: auto;
+    position: relative;
+    z-index: 9999;
     &::-webkit-scrollbar {
         width: 12px;
     }
@@ -212,8 +217,9 @@ body{
 
 .close-btn {
 	position: absolute;
-	top: 8px;
-	right: 20px;
+    display: none;
+	top: 9px;
+	right: 9px;
 	box-sizing: border-box;
 	width: 2em;
 	height: 2em;
