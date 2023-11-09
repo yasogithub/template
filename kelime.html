@@ -24,7 +24,11 @@
         <div class="modalContainer">
             <div class="modalitems">
                 <a onclick="modelClose()" class="close-btn"></a>
-                <img src="https://menu.newcastle.com.tr/uploads/p//PANCARLI-SALATA_1.jpg" alt="" class="modalImage">
+                <picture>
+                    <source srcset="https://menu.newcastle.com.tr/uploads/p//PANCARLI-SALATA_1.jpg" media="(max-width: 700px)">
+                    <source srcset="https://menu.newcastle.com.tr/uploads/p//PANCARLI-SALATA_1.jpg">
+                    <img src="https://menu.newcastle.com.tr/uploads/p//PANCARLI-SALATA_1.jpg" alt="" class="modalImage" />
+                </picture>
                 <div class="modalFooter">
                     <div class="modalName">
                         <span class="modalNameSpan span">Sucuklu Yumurta</span>
